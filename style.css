@@ -190,7 +190,7 @@
 #photos-section .photos {
   width: 4400%;
   animation: fotos;
-  animation-duration: 30s;
+  animation-duration: 135s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }

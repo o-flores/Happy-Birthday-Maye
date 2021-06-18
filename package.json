@@ -1,0 +1,10 @@
+{
+  "homepage": "https://o-flores.github.io/felizaniversariomaye",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.2"
+  }
+}
