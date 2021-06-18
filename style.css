@@ -311,6 +311,10 @@
   position: fixed;
   top: 0%;
   border: 1px black solid;
+  padding: 2rem;
+  max-width: 300px;
+  text-align: justify;
+  font-size: 30px;
 }
 
 #mamae {
