@@ -12,11 +12,25 @@
   position: absolute;
 }
 
+#lampadas {
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+}
+
 #turn-on {
-  z-index: 1;
   position: absolute;
-  top: 95%;
+  top: 60%;
+  right: 40%;
+  background-color: white;
+}
+
+#turn-on-text {
+  color: white;
+  position: absolute;
   left: 50%;
+  top: 50%;
+  font-size: 30px;
 }
 
 .no-show {
@@ -25,7 +39,7 @@
 }
 
 .fade-in {
-  background-color: #ffe8d6;
+  background-color: #e0aaff;
   height: 100vh;
   width: 100vw;
   animation-name: fade-in;
@@ -110,6 +124,13 @@
   width: 300px;
 }
 
+#sapo {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  width: 200px;
+}
+
 #title {
   position: fixed;
   top: 14%;
@@ -146,23 +167,30 @@
 
 #photos {
   position: fixed;
-  bottom: 0;
+  bottom: 1%;
+  left: 46%;
+  border: none;
+  background-color: #e0aaff;
+  color: white;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-timing-function: linear;
 }
 
 #photos-section {
   height: 640px; 
   width: 420px;
   position: absolute;
-  /* overflow: hidden; */
-  top: 0%;
+  overflow: hidden;
+  top: 5%;
   left: 35%;
   /* text-align: center; */
 }
 
 #photos-section .photos {
-  width: 4300%;
+  width: 4400%;
   animation: fotos;
-  animation-duration: 135s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -172,7 +200,7 @@
 }
 
 #photos-section .photos img {
-  /* height: 640px;  */
+  max-height: 500px; 
   width: 416px;
  /* margin-right: 3px; */
 }
@@ -261,10 +289,10 @@
   88.89% { margin-left: -4000% }
   90% { margin-left: -4000%; }
   91.11% { margin-left: -4100% }
-  /* 92.22% { margin-left: -4100% } */
-  /* 93.33% { margin-left: -4200% } */
-  /* 94.44% { margin-left: -4200% } */
-  100% { margin-left: -4200%; }
+  92.22% { margin-left: -4100% }
+  93.33% { margin-left: -4200% }
+  94.44% { margin-left: -4200% }
+  100% { margin-left: -4300%; }
 }
 
 .photos-title {
@@ -273,4 +301,30 @@
   font-size: 30px;
 }
 
+#seta {
+  position: fixed;
+  right: 20%;
+  top: 50%;
+}
 
+.texts {
+  position: fixed;
+  top: 0%;
+  border: 1px black solid;
+}
+
+#mamae {
+  left: 0;
+}
+
+#papai {
+  left: 25%;
+}
+
+#toto {
+  left: 50%;
+}
+
+#kikito{
+  left: 75%;
+}
