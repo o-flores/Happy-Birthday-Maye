@@ -7,6 +7,9 @@ photosContainer = document.querySelector('#photos-container')
 lightsText = document.querySelector('#turn-on-text');
 seta = document.querySelector('#seta');
 textsSection = document.querySelector('#texts-section');
+music = document.querySelector('#music');
+finalBtn = document.querySelector('#final-btn');
+finalSection = document.querySelector('#final-section')
 
 buttonLights.addEventListener('click', () => {
   noLights.classList.remove('dark');
@@ -15,7 +18,7 @@ buttonLights.addEventListener('click', () => {
   mainDiv.classList.remove('no-show');
   mainDiv.classList.add('fade-in');
   lightsText.classList.add('no-show');
-
+  music.classList.add('no-show');
 });
 
 photosBtn.addEventListener('click', () => {
@@ -29,4 +32,9 @@ seta.addEventListener("click", () => {
   photosSection.classList.add('no-show');
   seta.classList.add('no-show');
   textsSection.classList.remove('no-show')
+})
+
+finalBtn.addEventListener('click', () => {
+  textsSection.classList.add('no-show');
+  finalSection.classList.remove('no-show');
 })

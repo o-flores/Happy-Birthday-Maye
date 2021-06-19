@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow: hidden;
+  font-family: 'Pacifico', cursive;
 }
 
 .dark {
@@ -136,7 +137,6 @@
   top: 14%;
   color: black;
   left: 44%;
-  font-family: 'Pacifico', cursive;
   font-size: 40px;
   animation: outdoor 2s linear 1s infinite;
 }
@@ -175,6 +175,7 @@
   animation-name: fade-in;
   animation-duration: 4s;
   animation-timing-function: linear;
+  cursor: pointer;
 }
 
 #photos-section {
@@ -305,20 +306,25 @@
   position: fixed;
   right: 20%;
   top: 50%;
+  cursor: pointer;
 }
 
 #texts-section {
+  position: absolute;
+  top: 0;
   display: flex;
-  justify-content: space-around;
+  /* flex-direction: column; */
+  /* width: 100%; */
+  /* justify-content: space-around; */
 }
 
 .texts {
-  /* top: 0%; */
-  border: 1px black solid;
+  /* border: 1px black solid; */
   padding: 2rem;
   max-width: 300px;
   text-align: justify;
-  font-size: 25px;
+  font-size: 20px;
+  margin-right: 3rem;
 }
 
 #mamae {
@@ -335,4 +341,44 @@
 
 #kikito{
   left: 75%;
+}
+
+iframe {
+  top: 50%;
+  left: 50%;
+}
+
+#music {
+  position: fixed;
+  left: 10%;
+  top: 55%;
+  width: 200px;
+}
+
+#final-btn {
+  position: fixed;
+  bottom: 0;
+  left: 28%;
+  background-color: #e0aaff;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#final-section p {
+  position: fixed;
+  top: 50%;
+  color: white;
+  font-size: 40px;
+  text-decoration: underline;
+  left: 5%;
+}
+
+#final-section img {
+  position: fixed;
+  top: 5%;
+  right: 10%;
+  width: 80%px;
+  height: 95%;
 }
